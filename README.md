@@ -17,9 +17,9 @@ The implementation of the `write()` function in this repository is based on the 
 To use this `write()` implementation in your PIC24 project with `printf`, follow these steps:
 
 1. Clone or download this repository to your development environment.
-2. Copy the `printf.c` and `printf.h` files into your MPLABX project directory.
-3. Include the `printf.h` header file in your source code where you want to use `printf`.
-4. Initialize the UART module in your MCC-generated code. Ensure that the UART settings (baud rate, data bits, parity, stop bits) match those in `printf.c`.
+2. Copy the `myUSBCDC.c` and `myUSBCDC.h` files into your MPLABX project directory.
+3. Configure the "MLA USB Device Lite" resource in MCC
+4. Include the `myUSBCDC.h` header file in your source code where you want to use `printf`.
 5. Call `printf` and related functions as needed in your code for debugging and logging.
 
 ```c
